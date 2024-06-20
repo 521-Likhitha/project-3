@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import *
+from app1.views import *
+from app2.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('srujana/',srujana,name='srujana'),
     path('divya/',divya,name='divya'),
+    path('msg/',msg,name='msg'),
+    path('bye/',bye,name='bye'),
 ]
